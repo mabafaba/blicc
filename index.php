@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php $name = "martin" ;?>
+<?php $name = "martin" ; $name2 = "stef"?>
 
 <html>
 <head>
@@ -9,7 +9,12 @@
 <?php for ($i=0; $i < 10; $i++) { ?>
 	<br><div style="color: red">yeah</div>
 	<?php
-	echo $name;
+	if ($i===8) {
+		echo $name2;
+	} else {
+		echo $name;
+	}
+
 } ?>
 
 
